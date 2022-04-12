@@ -1,0 +1,39 @@
+.container-fluid{
+    width: 99vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+}
+.container{
+    border-radius:10px;
+    text-align: center;
+    width:380px;
+    background-color: rgb(234, 233, 233);
+    padding:30px 20px;
+}
+h5{
+    color:rgb(86, 85, 85);
+    margin-bottom:20px;
+}
+button,input{
+    border-radius:20px;
+    padding:8px 15px;
+}
+.checkbox{
+    text-align: left;
+    margin-bottom:12px;
+}
+label
+{
+    color: rgb(61, 61, 61);
+}
+button{
+    font-size:14px;
+}
+button span{
+    font-size:16px;
+    font-weight: 900;
+    padding-right:10px;
+}

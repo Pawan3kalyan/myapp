@@ -1,0 +1,36 @@
+span{
+    display: block;
+}
+.jumbotron{
+    width:100%;
+    margin-top: 10px;
+}
+.ul {
+    overflow:auto;
+    height: 100px;
+    width: 100%;
+}
+li {
+    color: antiquewhite;
+}
+.main{
+    width: 100%;
+    height: 98%;
+    overflow: auto;
+}
+input{
+    width: 300px;
+}
+.div{
+    overflow: auto;
+    height: 200px;
+}
+thead tr{
+    position: sticky;
+    top:0px;
+    background-color: aqua;
+}
+.box{
+    border: 1px solid black;
+}
+

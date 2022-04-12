@@ -1,0 +1,57 @@
+<div>
+    <input  class="form-control" [(ngModel)]="filterTerm">
+    <button  class="btn btn-primary"(click)="filter()">FILTER</button>
+    <select [(ngModel)]="column">
+    <option value="color">color</option>
+    <option value="Vehicle">vehicle</option>
+    <option value="id">id</option>
+    </select>
+    <select [(ngModel)]="order">
+        <option value="asc">ascending order</option>
+        <option value="desc">descending order</option>
+    </select>
+    <button  class="btn btn-primary"(click)="sort()">sort</button><br>
+
+    <select  class="form-control" [(ngModel)]="page"><br>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        </select>
+        <select  class="form-control"[(ngModel)]="limit">
+            <option value="5">5</option>
+            <option value="10">10</option>
+            <option value="15">15</option>
+        </select>
+        <button  class="btn btn-primary "(click)="push()">push</button>
+
+    <table>
+        <thead class="sticky">
+            <tr >
+                <th>Id</th>
+                <th>vehicle</th>
+                <th>manufacturer</th>
+                <th>model</th>
+                <th>type</th>
+                <th>fuel</th>
+                <th>color</th>
+                <th>img</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let data of data">
+                <!-- <td>{{data|json}}</td> -->
+                <!-- <ng-container *ngIf="data.manufacturer =='Ford' || data.manufacturer=='Honda'"> -->
+                <td>{{data.id}}</td>
+                <td>{{data.Vehicle|uppercase}}</td>
+                <td>{{data.manufacturer}}</td>
+                <td>{{data.model}}</td>
+                <td>{{data.type}}</td>
+                <td [ngClass]="data.fuel == 'Diesel'?'fuel':(data.fuel=='Electric' || data.fuel=='Gasoline'?'green':'orange')">{{data.fuel}}</td>
+                <td class="color">{{data.color}}</td>
+                <td><img src="{{data.image}}" alt="image" width="100px" height="50px"></td>
+            <!-- </ng-container> -->
+            </tr>
+        </tbody>
+    </table>
+</div>
+

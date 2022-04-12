@@ -1,0 +1,33 @@
+<p>dashboard works!</p>
+<div class="container-fluid">
+    <div class="dashboard">
+        <div class="left jumbotron text-center">
+            <div class="profile">
+                <img src="/assets/profile pic.png" alt="">
+                <h4>pavan</h4>
+                <span>pavan3.guptha@gmail.com</span>
+            </div>
+            <hr>
+            <div class="menu">
+                <h6 routerLink="home"><i class="fa-solid fa-house"></i>HOME</h6>
+                <h6 routerLink="interpolation"><i class="fa-solid fa-computer"></i>INTERPOLATION</h6>
+                <h6 routerLink="eventbinding"><i class="fa-brands fa-app-store-ios"></i>EVENT BINDING</h6>
+                <h6 routerLink="apps"><i class="fa-brands fa-app-store-ios"></i>APPS</h6>
+                <h6 routerLink="vehiclesummary"><i class="fa-solid fa-car"></i>VEHICLE SUMMARY</h6>
+                <h6 routerLink="account"><i class="fa-solid fa-computer"></i>ACCOUNT</h6>
+                <h6 routerLink="products"><i class="fa-solid fa-computer"></i>PRODUCTS</h6>
+                <h6 routerLink="createvehicles"><i class="fa-solid fa-computer"></i>create vehicles</h6>
+                <h6 routerLink="createaccounts"><i class="fa-solid fa-computer"></i>create accounts</h6>
+            </div>
+            <hr>
+            <input routerLink="/login" type="button" value="LOG OUT" class="btn btn-primary">
+        </div>
+       <div class="right">
+        <div class="top">
+            <h6>personal progress</h6>
+            <button class="btn">contact support</button>
+        </div>
+           <router-outlet></router-outlet>
+       </div>
+    </div>
+</div>

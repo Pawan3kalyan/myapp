@@ -1,0 +1,35 @@
+
+<div class="bottom">
+        <div class="card-columns" >
+            <div class="card"   (click)="change()"  [ngClass]="isRed ?'red' :(isBlue?'blue':(isYellow?'yellow':'orange'))" [ngClass]="isshown?'shown':'hide'">
+                <div class="card-body text-center" >
+                  <p class="card-text">Some text inside the first card</p>
+                </div>
+            </div>
+            <button class="btn btn-info" (click)="hide()" style="width:100px">
+              <span *ngIf="isshown">Hide</span>
+              <span *ngIf="!isshown">Shown</span>
+            </button>
+            <div class="card" >
+              <div class="card-body text-center">
+                <p class="card-text">Some text inside the first card</p>
+              </div>
+            </div>
+            
+          <div class="card">
+            <div class="card-body text-center">
+              <p class="card-text">Some text inside the first card</p>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="bottom">
+      <div class="card-columns">
+          <div class="card big">
+              <div class="card-body text-center">
+                <p class="card-text">Some text inside the first card</p>
+              </div>
+          </div>
+      </div>
+  </div>
+

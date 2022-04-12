@@ -1,0 +1,30 @@
+<div>
+    <input  class="form-control" [(ngModel)]="filterTerm">
+    <button  class="btn btn-primary"(click)="filter()">FILTER</button>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Account name</th>
+                <th>acc.num</th>
+                <th>Available balance</th>
+                <th>Currency</th>
+                <th>user imag</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let account of accounts">
+            <!-- <ng-container *ngIf="account.account_number!=791459426"> -->
+                <td>{{account.id}}</td>
+                <td>{{account.account_name}}</td>
+                <td>{{account.account_number}}</td>
+                <td>{{account.available_balance}}</td>
+                <td>{{account.currency}}</td>
+                <td><img src="{{account.user_image}}" alt="" width="100px" height="60px"></td>
+            <!-- </ng-container> -->
+            </tr>
+        </tbody>
+    </table>
+</div>
+

@@ -1,0 +1,33 @@
+
+table{
+
+    width: 100%;
+    border: 1px solid black;
+}
+th,td{
+    padding:5px 10px;
+    border-bottom:1px solid gray;
+}
+div{
+    background-color: rgb(214, 211, 201);
+    overflow: auto;
+    margin-top:10px;
+    height:78vh;
+    border:1px solid darkgray;
+}
+.sticky{
+   
+    position: sticky;
+    top: 0px;
+    background-color:rgb(214, 211, 201) ;
+    /* border: 2px solid black; */
+}
+.fuel{
+    background-color: red;
+}
+.green{
+    background-color: green;
+}
+.orange{
+    background-color: orange;
+}
